@@ -1,0 +1,11 @@
+[Unit]
+Description=BeID Forwarder
+After=syslog.target
+
+[Service]
+PIDFile=/var/run/beid-fwd.pid
+ExecStart=/usr/local/bin/beid-fwd.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
