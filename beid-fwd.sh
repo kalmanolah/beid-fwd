@@ -27,12 +27,12 @@ JAVA_PATH=$(which java)
 CURL_PATH=$(which curl)
 
 if [[ -z "$JAVA_PATH" ]]; then
-    echo "Java not found" >/dev/stderr
+    echo "Java not found"
     exit 1
 fi
 
 if [[ -z "$CURL_PATH" ]]; then
-    echo "cURL not found" >/dev/stderr
+    echo "cURL not found"
     exit 1
 fi
 
